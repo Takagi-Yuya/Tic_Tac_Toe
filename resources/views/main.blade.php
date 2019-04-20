@@ -19,19 +19,34 @@
                 margin: 0;
             }
 
-            .content {
-                text-align: center;
-            }
-
             .title {
-                font-size: 84px;
+                font-size: 60px;
             }
         </style>
     </head>
     <body>
-        <div class="content">
-            <div class="title m-b-md">
-                Tic Tac Toe
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="title mx-auto text-center">
+                        Tic Tac Toe
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <table class="m-5 mx-auto text-center" border="2" width="300px" height="300px">
+                        <tr>
+              　　           <td>セル0</td><td>セル1</td><td>セル2</td>
+                        </tr>
+                        <tr>
+              　　           <td>セル3</td><td>セル4</td><td>セル5</td>
+                        </tr>
+                        <tr>
+              　　           <td>セル6</td><td>セル7</td><td>セル8</td>
+                        </tr>
+                    </table>
+                </div>
             </div>
         </div>
     </body>

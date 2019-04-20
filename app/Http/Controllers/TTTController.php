@@ -8,17 +8,17 @@ use App\Http\Controllers\Controller;
 
 class TTTController extends Controller
 {
-    function a()
+    function a(Request $request)
     {
-        $mas[0] =  1;
-        $mas[1] =  1;
-        $mas[2] = -1;
-        $mas[3] = -1;
-        $mas[4] = -1;
-        $mas[5] =  1;
-        $mas[6] =  1;
-        $mas[7] = -1;
-        $mas[8] =  1;
+        $mas0 =  $request->m_0;
+        $mas1 =  $request->m_1;
+        $mas2 =  $request->m_2;
+        $mas3 =  $request->m_3;
+        $mas4 =  $request->m_4;
+        $mas5 =  $request->m_5;
+        $mas6 =  $request->m_6;
+        $mas7 =  $request->m_7;
+        $mas8 =  $request->m_8;
 
         for ($i = 0; $i < 9; $i++) {
             if ($mas[$i] == 1) {
