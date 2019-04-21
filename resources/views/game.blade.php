@@ -156,6 +156,26 @@
               <a class="link" href="{{ action('TTTController@reset') }}">RESET</a>
             </div>
         </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-12 p-5">
+                <p class="howto text-center">How to...</p>
+                <div class="explain col-md-8 mx-auto">
+                    <p>⓪ タテ・ヨコ・ナナメ いずれかを揃えれば勝ちのゲーム。</p>
+                    <p>① はじめに先行か後攻、◯か×を決める。</p>
+                    <br>
+                    <p>② <select><select> 決まった順番に◯か×を選択。</p>
+                    <br>
+                    <p>③ ◯か×の選択後、<input class="btn btn-primary" value="NEXT→"> を押す。</p>
+                    <br>
+                    <p>④ 次の人に交代して、②③の繰り返し。</p>
+                    <br>
+                    <p>⑤ 勝敗が決まると画面に表示される。</p>
+                    <br>
+                    <p>⑥ <a class="link" href="#">RESET</a> を押すと盤面がクリアされます。</p>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 @endsection

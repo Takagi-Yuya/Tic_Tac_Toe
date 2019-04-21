@@ -22,9 +22,18 @@
                 font-size: 60px;
             }
 
+            .howto {
+                font-size: 45px;
+            }
+
             .link {
                 font-size: 30px;
             }
+
+            .explain {
+                font-size: 20px;
+            }
+
             .tb_mas {
                 width: 100px;
                 height: 100px;
@@ -35,10 +44,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="title m-5 mx-auto text-center">
+                    <div class="title mt-5 mx-auto text-center">
                         Tic Tac Toe
                     </div>
-                    <hr>
                 </div>
             </div>
             <main class="py-4">
