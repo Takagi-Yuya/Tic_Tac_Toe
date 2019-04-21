@@ -22,30 +22,25 @@
             .title {
                 font-size: 60px;
             }
+
+            .link {
+                font-size: 30px;
+            }
         </style>
     </head>
     <body>
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="title mx-auto text-center">
+                    <div class="title m-5 mx-auto text-center">
                         Tic Tac Toe
                     </div>
+                    <hr>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-12">
-                    <table class="m-5 mx-auto text-center" border="2" width="300px" height="300px">
-                        <tr>
-              　　           <td>セル0</td><td>セル1</td><td>セル2</td>
-                        </tr>
-                        <tr>
-              　　           <td>セル3</td><td>セル4</td><td>セル5</td>
-                        </tr>
-                        <tr>
-              　　           <td>セル6</td><td>セル7</td><td>セル8</td>
-                        </tr>
-                    </table>
+                <div class="col-md-12 p-5 link text-center">
+                  <a href="{{ action('TTTController@set') }}">START</a>
                 </div>
             </div>
         </div>

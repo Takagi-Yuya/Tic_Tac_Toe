@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('main');
 });
+
+Route::get('check', 'TTTController@check');
+Route::get('game', 'TTTController@set');
