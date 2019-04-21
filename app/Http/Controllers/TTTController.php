@@ -19,30 +19,52 @@ class TTTController extends Controller
         $mas[7] = $request->m_7;
         $mas[8] = $request->m_8;
 
-        /*for ($i = 0; $i < 9; $i++) {
-            if ($mas[$i] == 1) {
-                $mas[$i] = "◯";
-            } elseif ($mas[$i] == -1) {
-                $mas[$i] = "×";
-            } else {
-                $mas[$i] = "-";
-            }
-        }*/
+        //勝敗　ヨコ
+        for ($i = 0; $i < 3; $i++) {
+      		if ($mas[$i*3+0] + $mas[$i*3+1] + $mas[$i*3+2] == 3) {
+      			print "○の勝ち！\n";
+      		} elseif ($mas[$i*3+0] + $mas[$i*3+1] + $mas[$i*3+2] == -3) {
+      			print "×の勝ち！\n";
+      		}
+      	}
+
+        //勝敗　タテ
+      	for ($i = 0; $i < 3; $i++) {
+      		if ($mas[0+$i] + $mas[3+$i] + $mas[6+$i] == 3) {
+      			print "○の勝ち！\n";
+      		} elseif ($mas[0+$i] + $mas[3+$i] + $mas[6+$i] == -3) {
+      			print "×の勝ち！\n";
+      		}
+      	}
+
+        //勝敗　ナナメ①
+      	if ($mas[0] + $mas[4] + $mas[8] == 3) {
+      		print "○の勝ち！\n";
+      	} elseif ($mas[0] + $mas[4] + $mas[8] == -3) {
+      		print "×の勝ち！\n";
+      	}
+
+        //勝敗　ナナメ②
+      	if ($mas[2] + $mas[4] + $mas[6] == 3) {
+      		print "○の勝ち！\n";
+      	} elseif ($mas[2] + $mas[4] + $mas[6] == -3) {
+      		print "×の勝ち！\n";
+      	}
 
         return view("game", [
-          'mas0' => $mas[0],
-          'mas1' => $mas[1],
-          'mas2' => $mas[2],
-          'mas3' => $mas[3],
-          'mas4' => $mas[4],
-          'mas5' => $mas[5],
-          'mas6' => $mas[6],
-          'mas7' => $mas[7],
-          'mas8' => $mas[8]
+            'mas0' => $mas[0],
+            'mas1' => $mas[1],
+            'mas2' => $mas[2],
+            'mas3' => $mas[3],
+            'mas4' => $mas[4],
+            'mas5' => $mas[5],
+            'mas6' => $mas[6],
+            'mas7' => $mas[7],
+            'mas8' => $mas[8]
         ]);
     }
 
-    public function set()
+    public function reset()
     {
         $mas[0] = 0;
         $mas[1] = 0;
@@ -54,26 +76,16 @@ class TTTController extends Controller
         $mas[7] = 0;
         $mas[8] = 0;
 
-        /*for ($i = 0; $i < 9; $i++) {
-            if ($mas[$i] == 1) {
-                $mas[$i] = "◯";
-            } elseif ($mas[$i] == -1) {
-                $mas[$i] = "×";
-            } else {
-                $mas[$i] = "-";
-            }
-        }*/
-
         return view("game", [
-          'mas0' => $mas[0],
-          'mas1' => $mas[1],
-          'mas2' => $mas[2],
-          'mas3' => $mas[3],
-          'mas4' => $mas[4],
-          'mas5' => $mas[5],
-          'mas6' => $mas[6],
-          'mas7' => $mas[7],
-          'mas8' => $mas[8]
+            'mas0' => $mas[0],
+            'mas1' => $mas[1],
+            'mas2' => $mas[2],
+            'mas3' => $mas[3],
+            'mas4' => $mas[4],
+            'mas5' => $mas[5],
+            'mas6' => $mas[6],
+            'mas7' => $mas[7],
+            'mas8' => $mas[8]
         ]);
     }
 }
