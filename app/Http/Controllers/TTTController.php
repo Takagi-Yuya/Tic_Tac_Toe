@@ -22,35 +22,43 @@ class TTTController extends Controller
 
         //勝敗　ヨコ
         for ($i = 0; $i < 3; $i++) {
-      		if ($mas[$i*3+0] + $mas[$i*3+1] + $mas[$i*3+2] == 3) {
-      			print "○の勝ち！\n";
-      		} elseif ($mas[$i*3+0] + $mas[$i*3+1] + $mas[$i*3+2] == -3) {
-      			print "×の勝ち！\n";
-      		}
-      	}
+            if ($mas[$i*3+0] + $mas[$i*3+1] + $mas[$i*3+2] == 3) {
+                $result = "○";
+                return view("win", ['result' => $result]);
+            } elseif ($mas[$i*3+0] + $mas[$i*3+1] + $mas[$i*3+2] == -3) {
+                $result = "×";
+                return view("win", ['result' => $result]);
+            }
+        }
 
         //勝敗　タテ
-      	for ($i = 0; $i < 3; $i++) {
-      		if ($mas[0+$i] + $mas[3+$i] + $mas[6+$i] == 3) {
-      			print "○の勝ち！\n";
-      		} elseif ($mas[0+$i] + $mas[3+$i] + $mas[6+$i] == -3) {
-      			print "×の勝ち！\n";
-      		}
-      	}
+        for ($i = 0; $i < 3; $i++) {
+            if ($mas[0+$i] + $mas[3+$i] + $mas[6+$i] == 3) {
+                $result = "○";
+                return view("win", ['result' => $result]);
+            } elseif ($mas[0+$i] + $mas[3+$i] + $mas[6+$i] == -3) {
+                $result = "×";
+                return view("win", ['result' => $result]);
+            }
+        }
 
         //勝敗　ナナメ①
-      	if ($mas[0] + $mas[4] + $mas[8] == 3) {
-      		print "○の勝ち！\n";
-      	} elseif ($mas[0] + $mas[4] + $mas[8] == -3) {
-      		print "×の勝ち！\n";
-      	}
+        if ($mas[0] + $mas[4] + $mas[8] == 3) {
+            $result = "○";
+            return view("win", ['result' => $result]);
+        } elseif ($mas[0] + $mas[4] + $mas[8] == -3) {
+            $result = "×";
+            return view("win", ['result' => $result]);
+        }
 
         //勝敗　ナナメ②
-      	if ($mas[2] + $mas[4] + $mas[6] == 3) {
-      		print "○の勝ち！\n";
-      	} elseif ($mas[2] + $mas[4] + $mas[6] == -3) {
-      		print "×の勝ち！\n";
-      	}
+        if ($mas[2] + $mas[4] + $mas[6] == 3) {
+            $result = "○";
+            return view("win", ['result' => $result]);
+        } elseif ($mas[2] + $mas[4] + $mas[6] == -3) {
+            $result = "×";
+            return view("win", ['result' => $result]);
+        }
 
         return view("game", [
             'mas0' => $mas[0],

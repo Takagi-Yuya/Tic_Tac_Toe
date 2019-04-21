@@ -153,7 +153,7 @@
         </form>
         <div class="row">
             <div class="col-md-12 p-5 text-center">
-              <a class="link" href="{{ action('TTTController@reset') }}">RESET</a>
+              <a class="link" href="{{ action('TTTController@reset') }}">One More Play</a>
             </div>
         </div>
         <hr>
@@ -171,9 +171,9 @@
                     <br>
                     <p>④ 次の人に交代して、②③の繰り返し。</p>
                     <br>
-                    <p>⑤ 勝敗が決まると画面に表示される。</p>
+                    <p>⑤ 勝敗が決まるとWINNER画面が表示される。</p>
                     <br>
-                    <p>⑥ <a class="link" href="#">RESET</a> を押すと盤面がクリアされます。</p>
+                    <p>⑥ <a class="link" href="#">One More Play</a> を押すと盤面がクリアされ、もう一度プレイできます。</p>
                 </div>
             </div>
         </div>

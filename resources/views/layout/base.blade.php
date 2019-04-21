@@ -41,6 +41,13 @@
                 width: 100px;
                 height: 100px;
             }
+
+            .win {
+                font-size: 50px;
+                padding: 0.5em 1em;
+                margin: 2em 0;
+                background: #cde4ff;
+            }
         </style>
     </head>
     <body>
