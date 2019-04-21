@@ -6,6 +6,11 @@
 ユーザー登録やDBは無く、同端末上で対戦が行えるのみです。
 <br>
 <br>
+URL : https://vast-shore-31281.herokuapp.com/
+<br>
+(herokuへデプロイ済み)
+<br>
+<br>
 
 <h2>言語/フレームワーク</h2>
 <ul>
