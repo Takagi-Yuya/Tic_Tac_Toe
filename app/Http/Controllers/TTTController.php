@@ -7,6 +7,7 @@ use App\Http\Controllers\Controller;
 
 class TTTController extends Controller
 {
+    //勝敗チェック
     public function check(Request $request)
     {
         $mas[0] = $request->m_0;
@@ -64,6 +65,7 @@ class TTTController extends Controller
         ]);
     }
 
+    //盤面クリア
     public function reset()
     {
         $mas[0] = 0;
