@@ -25,7 +25,7 @@
                         @if ($mas1 == 1)
                             ◯
                             <input type="hidden" name="m_1" value="{{ $mas1 }}">
-                        @elseif ($mas0 == -1)
+                        @elseif ($mas1 == -1)
                             ×
                             <input type="hidden" name="m_1" value="{{ $mas1 }}">
                         @else
@@ -152,7 +152,7 @@
             </div>
         </form>
         <div class="row">
-            <div class="col-md-12 p-5 link text-center">
+            <div class="col-md-12 p-5 text-center">
               <a class="link" href="{{ action('TTTController@reset') }}">RESET</a>
             </div>
         </div>
@@ -161,7 +161,8 @@
             <div class="col-md-12 p-5">
                 <p class="howto text-center">How to...</p>
                 <div class="explain col-md-8 mx-auto">
-                    <p>⓪ タテ・ヨコ・ナナメ いずれかを揃えれば勝ちのゲーム。</p>
+                    <p>⓪ タテ・ヨコ・ナナメ いずれかを◯か×で揃えれば勝ち。</p>
+                    <br>
                     <p>① はじめに先行か後攻、◯か×を決める。</p>
                     <br>
                     <p>② <select><select> 決まった順番に◯か×を選択。</p>

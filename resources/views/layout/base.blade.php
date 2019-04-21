@@ -27,7 +27,10 @@
             }
 
             .link {
-                font-size: 30px;
+                font-size: 20px;
+                padding: 0em 2em;
+                margin: 2em 0;
+                border: solid 2px;
             }
 
             .explain {
