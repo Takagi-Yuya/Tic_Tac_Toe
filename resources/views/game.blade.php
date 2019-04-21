@@ -173,7 +173,7 @@
                     <br>
                     <p>⑤ 勝敗が決まるとWINNER画面が表示される。</p>
                     <br>
-                    <p>⑥ <a class="link" href="#">One More Play</a> を押すと盤面がクリアされ、もう一度プレイできます。</p>
+                    <p>⑥ <a class="link" href="#">One More Play</a> を押すと盤面がクリアされ、もう一度プレイできる。</p>
                 </div>
             </div>
         </div>
